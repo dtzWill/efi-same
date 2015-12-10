@@ -1,0 +1,10 @@
+[Unit]
+Description=Set EFI to boot current entry next time
+
+[Service]
+Type=oneshot
+ExecStart=/home/will/bin/efisame
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
