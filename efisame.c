@@ -96,7 +96,9 @@ int main() {
 
   // And that the attributes are what we expect
   if (bnext.attr != BNEXT_ATTR) {
-    fprintf(stderr, "BootNext check failed: expected attributes [%x], got [%x].", BNEXT_ATTR, bnext.attr);
+    fprintf(stderr,
+            "BootNext check failed: expected attributes [%x], got [%x].",
+            BNEXT_ATTR, bnext.attr);
     return EXIT_FAILURE;
   }
 
